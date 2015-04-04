@@ -124,7 +124,17 @@ body {
   font-size: 90px;
 }
 
-/* line 57, ../sass/screen.scss */
-#score {
+/* line 58, ../sass/screen.scss */
+#scores #high-score {
+  margin-left: 30px;
+  display: inline-block;
+}
+/* line 62, ../sass/screen.scss */
+#scores #score {
+  display: inline-block;
+}
+
+/* line 67, ../sass/screen.scss */
+.score {
   font-size: 50px;
 }

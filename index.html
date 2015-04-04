@@ -10,7 +10,16 @@
   </head>
   <body>
     <div id="controls">
-      <span id="score" data-bind="text: score"></span>
+      <div id="scores">
+       <div id="score">
+          Score
+          <div class="score" data-bind="text: score"></div>
+        </div>
+        <div id="high-score">
+          Best
+          <div class="score" data-bind="text: highScore"></div>
+        </div>
+      </div>
       <span id="reset-button" data-bind="click: view.reset">reset</span>
     </div>
     <div id="game-board" data-bind="foreach: view.boxes">

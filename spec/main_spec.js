@@ -121,5 +121,15 @@ $(function() {
         expect(window.view.gameWon()).toBe(false);
       });
     });
+
+    describe("highScore", function() {
+      it("increases with a new high score", function() {
+        window.view.score(0);
+        window.view.score(5);
+        expect(window.view.highScore()).toBe(5);
+        window.view.score(2);
+        expect(window.view.highScore()).toBe(5);
+      });
+    });
   });
 });
