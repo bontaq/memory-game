@@ -1,0 +1,59 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+$lightgrey: #454545;
+
+body {
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+#game-board {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  span {
+    @include border-radius(5px);
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: $lightgrey;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+#controls {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#reset-button {
+  @include border-radius(5px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 5px;
+  width: 50px;
+  height: 20px;
+  border: 2px solid $lightgrey;
+  &:hover {
+    cursor: pointer;
+    margin-top: 9px;
+    border-bottom-width: 3px;
+  }
+}
+
+#game-won {
+  font-size: 90px;
+}
+
+#score {
+  font-size: 50px;
+}

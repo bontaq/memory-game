@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory~Game</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lodash.min.js"></script>
+    <script type="text/javascript" src="js/knockout.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div id="controls">
+      <span id="score" data-bind="text: score"></span>
+      <span id="reset-button" data-bind="click: view.reset">reset</span>
+    </div>
+    <div id="game-board" data-bind="foreach: view.boxes">
+      <span data-bind="click: view.selectBox,
+                       style: {'backgroundColor': getColor}"></span>
+    </div>
+    <div id="game-won" data-bind="visible: view.gameWon">YOU ARE #1 ;D</div>
+  </body>
+</html>
