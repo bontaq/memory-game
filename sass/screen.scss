@@ -6,7 +6,8 @@
 @import "compass/reset";
 @import "compass/css3";
 
-$lightgrey: #454545;
+$lightgrey: #B0B0B0;
+$darkergrey: #454545;
 
 body {
   font-family: Sans-Serif;
@@ -22,9 +23,17 @@ body {
     margin-top: 10px;
     margin-left: 10px;
     display: inline-block;
-    background-color: $lightgrey;
+    border: 2px solid $lightgrey;
     height: 90px;
     width: 90px;
+    // this is crazy hilariously shady.
+    // works because only knockout sets the background via
+    // style= attribute
+    &[style] {
+      height: 94px;
+      width: 94px;
+      border: 0px;
+    }
   }
 }
 
@@ -42,7 +51,7 @@ body {
   padding-top: 5px;
   width: 50px;
   height: 20px;
-  border: 2px solid $lightgrey;
+  border: 2px solid $darkergrey;
   &:hover {
     cursor: pointer;
     margin-top: 9px;
