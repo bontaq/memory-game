@@ -67,19 +67,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 body {
   font-family: Sans-Serif;
   text-align: center;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 #game-board {
   margin-left: auto;
   margin-right: auto;
   width: 500px;
 }
-/* line 20, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 #game-board span {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -87,18 +87,24 @@ body {
   margin-top: 10px;
   margin-left: 10px;
   display: inline-block;
-  background-color: #454545;
+  border: 2px solid #B0B0B0;
   height: 90px;
   width: 90px;
 }
+/* line 32, ../sass/screen.scss */
+#game-board span[style] {
+  height: 94px;
+  width: 94px;
+  border: 0px;
+}
 
-/* line 31, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 #controls {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 #reset-button {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -112,29 +118,29 @@ body {
   height: 20px;
   border: 2px solid #454545;
 }
-/* line 46, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 #reset-button:hover {
   cursor: pointer;
   margin-top: 9px;
   border-bottom-width: 3px;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 #game-won {
   font-size: 90px;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 #scores #high-score {
   margin-left: 30px;
   display: inline-block;
 }
-/* line 62, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 #scores #score {
   display: inline-block;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .score {
   font-size: 50px;
 }
