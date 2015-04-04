@@ -18,6 +18,14 @@ var memoryViewModel = function() {
   self.boxes = ko.observableArray();
   self.lastSelected = ko.observable();
 
+  self._highScore = 0;
+  self.highScore = ko.computed(function() {
+    if (self.score() > self._highScore) {
+      self._highScore = self.score();
+    }
+    return self._highScore;
+  });
+
   self.isWin = function(box) {
     var lastColor = self.lastSelected() === undefined ?
           undefined : self.lastSelected().color();

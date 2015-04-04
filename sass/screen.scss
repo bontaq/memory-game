@@ -54,6 +54,16 @@ body {
   font-size: 90px;
 }
 
-#score {
+#scores {
+  #high-score {
+    margin-left: 30px;
+    display: inline-block;
+  }
+  #score {
+    display: inline-block;
+  }
+}
+
+.score {
   font-size: 50px;
 }
